@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kwabena Ampomah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("baby.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+    }
+
+    .page-section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .link {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #FFF;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .title h1 {
+      font-size: 60px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .title h3 {
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      justify-items: center;
+      padding: 20px;
+    }
+
+    .project {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .project h3 {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      font-size: 14px;
+      color: white;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .project a:hover {
+      background: white;
+      color: black;
+    }
+
+    .skills-section {
+      padding: 40px 20px;
+    }
+
+    .skills-title {
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 15px;
+    }
+
+    .skill {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      flex: 0 1 calc(25% - 30px); 
+      margin-bottom: 15px;
+    }
+
+    .skill img {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .title h1 {
+        font-size: 40px;
+      }
+
+      .skills-title {
+        font-size: 36px;
+      }
+
+      .projects {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      .skills-grid {
+        justify-content: center;
+      }
+
+      .skill {
+        flex: 0 1 calc(50% - 30px); 
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-section" id="home">
+    <div class="header">
+      <a href="#About" class="link">About</a>
+      <a href="#Projects" class="link">Projects</a>
+      <a href="#Skills" class="link">Skills</a>
+    </div>
+    <div class="title">
+      <h1>Kwabena Ampomah</h1>
+      <h3>Aspiring Philly Software Developer</h3>
+    </div>
+  </div>
+
+  <div class="page-section" id="Projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>SpotifyWrapped 24/7</h3>
+        <p>I wanted to see my Spotify wrapped but couldn’t wait a year.</p>
+        <a href="https://github.com/Kwabena-Ampomah/top5spotify" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>HeartAttack Predictor</h3>
+        <p>I have created a Heart Attack Predictor utilizing Python's machine learning capabilities.</p>
+        <a href="https://github.com/Kwabena-Ampomah/HeartAttackpredictor" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Tinder Soccer Draft</h3>
+        <p>Developed a game that uses a tinder card system to draft your own soccer team utilizing Google Firebase Database and React.JS.</p>
+        <a href="https://github.com/Kwabena-Ampomah/study-buddy-" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Android Reminder App</h3>
+        <p>Utilizing Java and Kotlin, I created a fully functional reminder app for android devices that utilizes the android notification screen.</p>
+        <a href="https://github.com/Kwabena-Ampomah/Reminderapp" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section skills-section" id="Skills">
+    <h2 class="skills-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <img src="java.png" alt="Java">
+        <p>Java</p>
+      </div>
+      <div class="skill">
+        <img src="js.png" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <img src="python.png" alt="Python">
+        <p>Python</p>
+      </div>
+      <div class="skill">
+        <img src="html.png" alt="HTML">
+        <p>HTML</p>
+      </div>
+      <div class="skill">
+        <img src="css.png" alt="CSS">
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <img src="react.png" alt="React">
+        <p>React</p>
+      </div>
+      <div class="skill">
+        <img src="kotlin.png" alt="Kotlin">
+        <p>Kotlin</p>
+      </div>
+      <div class="skill">
+        <img src="swift.png" alt="Swift">
+        <p>Swift</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
